@@ -1,0 +1,134 @@
+.header {
+	display: none;
+}
+
+.footer {
+	position: absolute;
+	bottom: 3vh;
+	left: 0;
+	padding-bottom: 0;
+}
+
+.failPayment {
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('../img/main/background.png');
+}
+	.failPayment > .content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+	}
+		.failPayment > .content > h2 {
+			color: rgba(74, 74, 74, 1);
+			font-size: 2.5vh;
+			font-weight: 600;
+			letter-spacing: .1vh;
+			text-align: center;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+			.failPayment > .content > h2 > .icon {
+				width: 2.6vh;
+				height: 2.6vh;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-image: url('../img/icons/error.svg');
+				margin-right: 1vh;
+			}
+		.failPayment > .content > h3 {
+			color: rgba(174, 174, 174, 1);
+			font-size: 2vh;
+			font-weight: 200;
+			letter-spacing: .1vh;
+			text-align: center;
+			margin-top: .75vh;
+		}
+		.failPayment > .content > .img {
+			margin-top: 4vh;
+			width: 50vh;
+			height: 25vh;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-image: url('../img/icons/close-group.png');
+		}
+		.failPayment > .content > .under {
+			margin-top: 4vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.failPayment > .content > .under > p {
+				color: rgba(174, 174, 174, 1);
+				font-size: 1.5vh;
+				font-weight: 200;
+				letter-spacing: .1vh;
+				text-align: center;
+				line-height: 1.3;
+			}
+			.failPayment > .content > .under > .buttons {
+				margin-top: 2vh;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+				.failPayment > .content > .under > .buttons > a {
+					margin-left: 1.5vh;
+				}
+				.failPayment > .content > .under > .buttons > a:first-child {
+					margin-left: 0;
+				}
+					.failPayment > .content > .under > .buttons > a > button {
+						outline: none;
+						border: none;
+						background: #fc8f09;
+						font-size: 1.5vh;
+						color: white;
+						font-weight: 300;
+						padding: 1vh;
+						padding-left: 2vh;
+						padding-right: 2vh;
+						transition: opacity 250ms ease;
+						font-family: Roboto;
+						display: flex;
+						flex-direction: row;
+						justify-content: center;
+						align-items: center;
+					}
+						.failPayment > .content > .under > .buttons > a > button:hover {
+							cursor: pointer;
+							opacity: .9;
+						}
+						.failPayment > .content > .under > .buttons > a > button > .icon {
+							width: 1.5vh;
+							height: 1.5vh;
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position: center;
+							background-image: url('../img/icons/svg/error.svg');
+						}
+							.failPayment > .content > .under > .buttons > a[name='shop'] > button > .icon {
+								margin-right: .75vh;
+							}
+							.failPayment > .content > .under > .buttons > a[name='help'] > button > .icon {
+								margin-left: .75vh;
+								transform: rotate(180deg);
+							}
+							
+							
+@media screen and (orientation: portrait) {
+	.failPayment > .content > .img {
+		width: 100%;
+	}
+}

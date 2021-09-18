@@ -1,0 +1,213 @@
+.mplusblock {
+	min-height: 100%;	
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url('../img/main/background.png');
+	background-color: rgba(243, 243, 243, 1);
+	justify-content: flex-start;
+}
+	.mplusblock > .content {
+		width: 60%;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		position: relative;
+		z-index: 1;
+		padding-top: 15vh;
+	}
+		.mplusblock > .content > h2 {
+			color: black;
+			font-size: 3.25vh;
+			font-weight: 600;
+			text-align: left;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+		}
+			.mplusblock > .content > h2 > .icon {
+				width: 18vh;
+				height: 7vh;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-image: url('../img/logo/logo.png?2');
+				margin-left: 2vh;
+				margin-top: -.8vh;
+				position: relative;
+			}
+				.mplusblock > .content > h2 > .icon:after {
+					content: '+';
+					position: absolute;
+					left: -1vh;
+					top: 0;
+					color: #fc8f09;
+					font-size: 3.25vh;
+					font-weight: 600;
+				}
+				.mplusblock > .content > h2 > .icon:before {
+					content: '+';
+					position: absolute;
+					right: 1vh;
+					top: -1.5vh;
+					color: #fc8f09;
+					font-size: 3.25vh;
+					font-weight: 600;
+				}
+		.mplusblock > .content > h3 {
+			color: black;
+			font-size: 3.25vh;
+			font-weight: 600;
+			text-align: left;
+			margin-top: 1vh;
+		}
+			.mplusblock > .content > h3 > span {
+				color: #fc8f09;
+			}
+		.mplusblock > .content > .plates {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			margin-top: 5vh;
+		}
+			.mplusblock > .content > .plates > .plate {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				background: white;
+				border-radius: 1vh;
+				margin-right: 2vh;
+				margin-bottom: 2vh;
+				padding: 2vh;
+				height: 7vh;
+				width: 30vh;
+			}
+				.mplusblock > .content > .plates > .plate > h2 {
+					color: black;
+					font-size: 1.75vh;
+					font-weight: 600;
+					text-align: left;
+				}
+				.mplusblock > .content > .plates > .plate > .texts {
+					display: flex;
+					flex-direction: row;
+					justify-content: flex-start;
+					align-items: center;
+				}
+					.mplusblock > .content > .plates > .plate > .texts > p {
+						color: #fc8f09;
+						font-size: 3vh;
+						font-weight: 600;
+						text-align: left;
+						margin-right: 1.5vh;
+					}
+				.mplusblock > .content > .plates > .plate h3 {
+					color: black;
+					font-size: 1.75vh;
+					font-weight: 300;
+					text-align: left;
+					line-height: 1.1;
+				}
+					.mplusblock > .content > .plates > .plate h3 > span {
+						font-weight: 600;
+					}
+					.mplusblock > .content > .plates > .plate h3 > span[name='postfix'] {
+						color: #fc8f09;
+					}
+		.mplusblock > .content > h4 {
+			color: black;
+			font-size: 1.75vh;
+			font-weight: 500;
+			text-align: left;
+			margin-top: 1vh;
+		}
+		.mplusblock > .content > .buttons {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			margin-top: 2.5vh;
+		}
+			.mplusblock > .content > .buttons > button {
+				outline: none;
+				background: #fc8f09;
+				border: none;
+				border-radius: .75vh;
+				height: 5vh;
+				color: white;
+				font-weight: 400;
+				font-size: 1.75vh;
+				width: 27.5vh;
+				transition: box-shadow 350ms ease, text-shadow 350ms ease, color 200ms ease, background 200ms ease;
+				margin-left: 2.5vh;
+			}
+				.mplusblock > .content > .buttons > button.sub {
+					background: transparent;
+					color: #fc8f09;
+					border: .25vh #fc8f09 solid;
+				}
+				.mplusblock > .content > .buttons > button:first-child {
+					margin-left: 0;
+				}
+				.mplusblock > .content > .buttons > button > span {
+					font-weight: 500;
+					font-size: 1vh;
+				}
+					.mplusblock > .content > .buttons > button > span > span.price {
+						font-weight: 600;
+						font-size: 1.75vh;
+					}
+				.mplusblock > .content > .buttons > button:hover {
+					cursor: pointer;
+					text-shadow: 0px 0px 0.1vw rgba(255,255,255,0.7);
+				}
+				.mplusblock > .content > .buttons > button.main:hover {
+					box-shadow: 0 0 5vh .3vh #fc8f09;
+				}
+				.mplusblock > .content > .buttons > button.sub:hover {
+					box-shadow: 0 0 5vh .3vh #fc8f09;
+					background: #fc8f09;
+					color: white;
+				}
+
+@media screen and (max-device-aspect-ratio: 4/3) {
+	.mplusblock > .content {
+		width: 70%;
+	}
+}	
+													
+@media screen and (orientation: portrait) {
+	.mplusblock > .content {
+		width: 90%;
+	}
+	.mplusblock > .content > .plates {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.mplusblock > .content > .plates > .plate {
+		width: 100%;
+		margin-right: 0;
+	}
+	.mplusblock > .content > h2 > .icon {
+		display: none;
+	}
+	.mplusblock > .content > .buttons {
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		margin-top: 2.5vh;
+	}
+	.mplusblock > .content > .buttons > button {
+		margin-left: 0;
+		margin-top: 2vh;
+		width: 100%;
+	}
+}

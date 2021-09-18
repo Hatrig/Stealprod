@@ -1,0 +1,18 @@
+<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_1" y="15" x="28" width="14" height="1" fill="#ffffff"/>
+  <rect id="svg_2" y="19" x="28" width="20" height="1" fill="#ffffff"/>
+  <rect id="svg_3" y="31" x="16" width="32" height="1" fill="#ffffff"/>
+  <rect id="svg_4" y="27" x="16" width="32" height="1" fill="#ffffff"/>
+  <rect id="svg_5" y="23" x="16" width="32" height="1" fill="#ffffff"/>
+  <rect id="svg_6" y="11" x="28" width="14" height="1" fill="#ffffff"/>
+  <path id="svg_7" fill="#ffffff" d="m54,23.61l0,-7.61l-11,-11l-33,0l0,18.74l-5,4.26l0,8.891l0,22.109l54,0l0,-19.95l0,-11.05l-5,-4.39zm-10,-16.196l7.586,7.586l-7.586,0l0,-7.586zm-36.189,50.586l22.495,-18.33c0.435,-0.354 1.052,-0.557 1.694,-0.557s1.26,0.203 1.694,0.557l22.495,18.33l-48.378,0zm50.189,-29.444l-20.681,11.489l0.835,0.68l19.846,-11.026l0,9.342l0,19.145l-23.674,-19.291c-0.64,-0.521 -1.482,-0.781 -2.326,-0.781s-1.687,0.261 -2.326,0.781l-23.674,19.291l0,-21.322l0,-7.165l19.846,11.025l0.834,-0.68l-20.68,-11.488l0,-0.094l4,-3.407l0,4.724l1,0.556l0,-24.335l31.586,0l0.414,0l0,10l10,0l0,14.333l1,-0.556l0,-4.723l4,3.407l0,0.095z"/>
+  <path id="svg_8" fill="#ffffff" d="m25,11l-9,0l0,9l9,0l0,-9zm-1,8l-7,0l0,-7l7,0l0,7z"/>
+ </g>
+</svg>
